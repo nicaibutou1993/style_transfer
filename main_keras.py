@@ -107,6 +107,8 @@ def content_loss(base, combination):
     return K.sum(K.square(combination - base))
 
 
+print()
+
 def total_variation_loss(x):
     assert K.ndim(x) == 4
     if K.image_data_format() == 'channels_first':
